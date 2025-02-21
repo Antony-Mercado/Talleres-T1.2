@@ -7,8 +7,8 @@ public class CuentaBancaria {
     public CuentaBancaria(){
 
         numeroCuenta = "Desconocido";
-        saldo = "Desconocido";
-        tipoCuenta = "Desconocido";
+        saldo = "0.0";
+        tipoCuenta = "Ahorro";
     }
 
     public CuentaBancaria(String numeroCuenta, String tipoCuenta){
@@ -20,5 +20,10 @@ public class CuentaBancaria {
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
         this.tipoCuenta = tipoCuenta;
+    }
+
+    public String toString(){
+        return "Cuenta " + numeroCuenta + " - Tipo: " + tipoCuenta + " - Saldo: $" + saldo;
+        
     }
 }
